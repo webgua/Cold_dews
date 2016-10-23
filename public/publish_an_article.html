@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发表文章</title>
+</head>
+<body>
+	<form action="/save_article" method="post">
+		<label for="title">title:</label>
+		<input type="text" name="title" id="title"><br/>
+		<label for="author">author:</label>
+		<input type="text" name="author" id="author"><br/>
+		<label for="classify">classify:</label>
+		<input type="text" name="classify" id="classify"><br/>
+		<label for="article">mainbody:</label>
+		<textarea name="article" id="article" cols="100" rows="20"></textarea><br/>
+		<input type="submit" value="post">
+	</form>
+</body>
+</html>

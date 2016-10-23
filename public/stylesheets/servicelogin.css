@@ -1,0 +1,66 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #fff;
+    border: 0;
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    font-size: 13px;
+    color: #404040;
+    direction: ltr;
+    -webkit-text-size-adjust: none;
+}
+.wrapper{
+	position: relative;
+	min-height: 100%;
+}
+.facedoor-header-bar{
+	height: 108px;
+	border: 0;
+	overflow: hidden;
+}
+.clearfix{
+	zoom:1;
+}
+.content{
+	padding: 0 44px;
+}
+.facedoor-header-bar .header .logo{
+	float: none;
+	margin: 40px auto 30px;
+	display: block;
+	height: 40px;
+	width: 120px;
+}
+.header .logo-w{
+	background-image: url(../images/logo.png);
+	background-size: 120px 40px;
+}
+
+.facedoor-main-content {
+	padding-bottom: 100px;
+}
+.facedoor-main-content .banner{
+	text-align: center;
+}
+.banner h1 {
+    font-family: 'Open Sans', arial;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+    font-size: 42px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.banner h2 {
+    font-family: 'Open Sans', arial;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}

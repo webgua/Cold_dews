@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Process-RegisterPage</title>
+	<script src="./javascripts/util.js"></script>
+</head>
+<body>
+	<div class="register-container">
+		<form action="/" method="POST" id="register_form">
+			<p>telephone: <input type="text" name="telephone" id="telephone" onblur="checkTelephone(this.value)"><span id="telephonespan"></span></p>	
+			<p>password: <input type="text" name="password" id="password" onblur="checkPwd(this.value)"><span id="passwordspan"></span></p>
+			<p>confirm: <input type="text" name="confirm" id="confirm" onblur="checkRPwd(this.value)"><span id="confirmspan"></span></p>
+			<p>School: <input type="text" name="School" id="School" onblur="checkSchool(this.value)"><span id="Schoolspan"></span></p>
+			<p>Email: <input type="email" name="email" id="email" onblur="checkEmail(this.value)"><span id="emailspan"></span></p>
+			<p><input type="submit" value="register" name="register"></p>	
+		</form>
+	</div>
+</body>
+</html>

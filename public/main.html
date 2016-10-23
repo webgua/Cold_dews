@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Process</title>
+	<link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+	<header>
+		<h1><a href="#">门面</a></h1>
+		<nav>
+			<ul>
+				<li><a href="#">网站</a></li>
+				<li><a href="#">笔记</a></li>
+				<li><a href="#">文章</a></li>
+				<li><a href="#">图片</a></li>
+				<li><a href="#">美句</a></li>
+				<li><a href="#">杂货</a></li>
+				<li><a href="#">门面</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="banner">
+		<div class="wrapper">
+			<div class="login">
+				<form action="/login" method="post" id="loginform" name="loginform">
+					<fieldset>
+						<legend>登陆</legend>
+						<div class="item item-account">
+							<input type="text" name="form_account" id="form_account" placeholder="邮箱/手机号" class="inp">
+						</div>
+						<div class="item item-password">
+							<input type="password" name="form_password" id="form_password" class="inp" placeholder="密码">
+							<div id="opt">
+								<a href="#">忘记密码</a>
+							</div>
+						</div>
+						<div class="item item-submit">
+							<input type="submit" value="登陆门面" class="bn-submit">
+							<a href="" class="link-reg">注册账号</a>
+						</div>
+						<div class="item item-action">
+							<label for="form-remember">
+								<input type="checkbox" name="remember" id="remember">记住我
+							</label>
+							<ul class="item-action-third"><a href="#">111</a></ul>
+						</div>
+					</fieldset>
+				</form>
+				<div style="display:none"></div>
+			</div>
+
+			<div class="introduction">
+				<p class="app-title">
+					门面
+					<span>1.0</span>
+				</p>
+				<p class="app-slogan">
+					<span>发现数据中的艺术</span>
+				</p>
+				<p class="link-weichat">关注门面公众号</p>	
+				<div class="wei-qr">
+					<a href="#"><img src="./images/icon_qrcode_green.png" alt="" width="28" height="28"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="first-container" class="section">
+		<div class="wrapper">
+			<div class="side">
+				<h2>有趣的是</h2>
+				<div class="interesting">
+					
+				</div>
+			</div>
+			<div class="main">
+				<div class="mod">
+					<h2>内容总览.......
+					<span class="pl">(<a href="#" target="_self">more</a>)</span>
+					</h2>
+					<div class="albums">
+						<ul>
+							<li><div class="pic">
+								<a href="#"><img src="./images/temp1.jpg" alt=""></a>
+							</div>
+							<a href="#">picture1</a></li>
+							<li><div class="pic">
+								<a href="#"><img src="./images/temp2.jpg" alt=""></a>
+							</div>
+							<a href="#">picture2</a></li>
+							<li><div class="pic">
+								<a href="#"><img src="./images/temp3.jpg" alt=""></a>
+							</div>
+							<a href="#">picture3</a></li>
+							<li><div class="pic">
+								<a href="#"><img src="./images/temp4.jpg" alt=""></a>
+							</div>
+							<a href="#">picture4</a></li>
+						</ul>
+					</div>
+					<div class="notes">
+						<ul></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="notes-container" class="section">
+		<div class="wrapper">
+			<div class="sidenav">
+				<h2 class="section-title">
+					<a href="#">笔记</a>
+				</h2>
+				<div class="side-links nav-anon"></div>
+				<!-- <div class="notes-list"></div> -->
+			</div>
+			<div class="main"></div>
+			<div class="side"></div>
+		</div>
+	</div>
+
+</body>
+</html>
+

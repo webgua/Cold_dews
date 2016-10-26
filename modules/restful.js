@@ -45,3 +45,40 @@ exports.SodaForward_getDataServlet = function(req,res,params,callback){
 		}
 	})
 }
+
+
+exports.SodaForward_getScoreServlet = function(req,res,params,callback){
+	var opts = {
+		url:config.soda_server_path+"/Soda/GetScoreServlet",
+	}
+	console.log("get data servlet.");
+	request.get(opts,function(err,response,data){
+		if(!err && response.statusCode == 200){
+			//todo	
+			console.log("query RESTful API successfully");
+			// console.log("the return data is "+data);
+			callback(err,data,params);
+		}else{
+			console.log("query RESTful API failed");
+			callback(err);
+		}
+	});
+}
+
+exports.SodaForward_getHistoryServlet = function(req,res,params,callback){
+	var opts = {
+		url:config.soda_server_path+"/Soda/GetHistoryServlet",
+	}
+	console.log("get data servlet.");
+	request.get(opts,function(err,response,data){
+		if(!err && response.statusCode == 200){
+			//todo	
+			console.log("query RESTful API successfully");
+			// console.log("the return data is "+data);
+			callback(err,data,params);
+		}else{
+			console.log("query RESTful API failed");
+			callback(err);
+		}
+	})
+}

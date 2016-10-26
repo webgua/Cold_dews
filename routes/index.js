@@ -3,9 +3,9 @@ var router = express.Router();
 var util = require('../modules/util_node');
 
 /* GET home page. */
-router.get('/', function(req, res) {
-    res.redirect("/main.html");
-});
+// router.get('/', function(req, res) {
+//     res.redirect("/main.html");
+// });
 router.get('/login', function(req, res) {
     res.redirect("/login.html");
 });
@@ -17,7 +17,7 @@ router.get("/pictures",function(req,res){
     res.redirect("/pictures.html");
 });
 
-router.get("/SodaBigData",function(req,res){
+router.get("/",function(req,res){
     res.redirect("/SodaFront/SodaMainPage.html");
 });
 
@@ -52,7 +52,15 @@ router.post('/save_article',function(req,res){
 router.get('/Soda/GetDataServlet',function(req,res){
     console.log('get the data from Soda Server!');
     util.handle_soda_getdataservlet(req,res);
-})
+});
+router.get('/Soda/GetScoreServlet',function(req,res){
+    console.log('get the score information from Soda Server!');
+    util.handle_soda_getscoreservlet(req,res);
+});
+router.get('/Soda/GetHistoryServlet',function(req,res){
+    console.log('get the history information from Soda Server!');
+    util.handle_soda_gethistoryservlet(req,res);
+});
 
 router.use(function(req,res){
     res.render('404.html');

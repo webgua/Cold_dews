@@ -72,7 +72,20 @@ function handle_save_article(req,res){
 function handle_soda_getdataservlet(req,res){
 	console.log("now handle the soda  getdataservlet process");
 	params = {"res":res};
-	restful.SodaForward_getDataServlet(req,res,params,handle_soda_getdataservlet_return)
+	restful.SodaForward_getDataServlet(req,res,params,handle_soda_getdataservlet_return);
+}
+
+function handle_soda_getscoreservlet(req,res){
+	console.log("now handle the soda  getscoreservlet process");
+	params = {"res":res};
+	restful.SodaForward_getScoreServlet(req,res,params,handle_soda_getdataservlet_return);
+}
+
+function handle_soda_gethistoryservlet(req,res){
+	console.log("now handle the soda  gethistoryservlet process");
+	params = {"res":res};
+	restful.SodaForward_getHistoryServlet(req,res,params,handle_soda_getdataservlet_return);
+
 }
 
 function handle_soda_getdataservlet_return(err,data,params){
@@ -87,7 +100,10 @@ function handle_soda_getdataservlet_return(err,data,params){
 	params.res.end();
 }
 
+
 exports.handle_register = handle_register;
 exports.handle_login = handle_login;
 exports.handle_save_article = handle_save_article;
 exports.handle_soda_getdataservlet =handle_soda_getdataservlet;
+exports.handle_soda_getscoreservlet =handle_soda_getscoreservlet;
+exports.handle_soda_gethistoryservlet =handle_soda_gethistoryservlet;
